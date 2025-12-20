@@ -7,7 +7,6 @@ CXXFLAGS = -Wall -std=c++17
 
 # Target executable
 TARGET = dependency-test
-# Source files
 SRC = dependency-test.cpp
 
 # Default target
@@ -16,6 +15,9 @@ all: $(TARGET)
 # Build target
 $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
+
+run: $(TARGET)
+	./$(TARGET)
 
 # Clean up build files
 clean:
