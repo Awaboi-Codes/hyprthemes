@@ -1,5 +1,5 @@
 # hyprthemes
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![License](https://img.shields.io/badge/license-GPLv3-blue)](LICENSE)
 [![GitHub Repo stars](https://img.shields.io/github/stars/Awaboi-Codes/hyprthemes?style=social)](https://github.com/Awaboi-Codes/hyprthemes/stargazers)
 [![Arch User Repository](https://img.shields.io/aur/version/hyprthemes?label=AUR)](https://aur.archlinux.org/packages/hyprthemes/)
 
