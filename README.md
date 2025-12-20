@@ -9,6 +9,7 @@ A **Hyprland theme manager** to easily switch and manage Hyprland themes.
 
 ## Table of Contents
 - [Installation](#installation)
+  - [Dependencies](#dependencies)
   - [Manual Installation](#manual-installation)
   - [AUR (Arch User Repository)](#aur-arch-user-repository)
 - [Usage](#usage)
@@ -19,6 +20,8 @@ A **Hyprland theme manager** to easily switch and manage Hyprland themes.
 ---
 
 ## Installation
+
+**Dependencies**
 
 Dependencies: make, git, bash, gcc
 
