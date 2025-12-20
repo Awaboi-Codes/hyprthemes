@@ -15,10 +15,8 @@ all: $(TARGET)
 # Build target
 $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
-
-run: $(TARGET)
 	./$(TARGET)
-
+	
 # Clean up build files
 clean:
 	rm -f $(TARGET)
