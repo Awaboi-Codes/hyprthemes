@@ -76,13 +76,17 @@ yay -S hyprthemes
 
 ## Compatability
 Works on:
+
 Arch Linux
 
 Doesn't work on:
+
 Windows (stupid OS)
+
 Mac
 
 Untested:
+
 Every other one
 
 ## Showcase
