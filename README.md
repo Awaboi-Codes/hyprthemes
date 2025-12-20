@@ -61,7 +61,7 @@ Install using git:
 ```bash
 git clone https://github.com/Awaboi-Codes/hyprthemes.git
 cd hyprthemes
-make build.make
+make
 ```
 
 **AUR (Arch User Repository)**
