@@ -1,7 +1,7 @@
 # Makefile for dependency-test.cpp
 
 # Compiler
-CXX = gcc
+CXX = g++
 # Compiler flags
 CXXFLAGS = -Wall -std=c++17
 
