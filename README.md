@@ -19,14 +19,40 @@ A **Hyprland theme manager** to easily switch and manage Hyprland themes.
 ---
 
 ## Installation
-**Manual Installation**
 
-Required Dependencies: bash, git, make
+Dependencies: make, git, bash, gcc
 
 To download those dependencies:
+
+*Arch/Manjaro Linux*
 ```bash
-sudo pacman -S bash git make
+sudo pacman -S bash git make gcc
 ```
+
+*Debian-Based Linux (Ubuntu, Mint, etc.)*
+```bash
+sudo apt install bash git make gcc
+```
+
+*Fedora/Red Hat Linux*
+```bash
+sudo dnf install bash git make gcc
+```
+
+*openSUSE Linux*
+```bash
+sudo zypper install bash git make gcc
+```
+
+*Gentoo Linux*
+```bash
+sudo emerge bash git make gcc
+```
+
+*Windows*
+Yeah right buddy like you are going to use Hyprland on Windows
+
+**Manual Installation**
 
 Install using git:
 ```bash
