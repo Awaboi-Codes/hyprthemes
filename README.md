@@ -14,6 +14,7 @@ A **Hyprland theme manager** to easily switch and manage Hyprland themes.
   - [AUR (Arch User Repository)](#aur-arch-user-repository)
 - [Usage](#usage)
 - [Showcase](#showcase)
+- [Compatability](#compatability)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -72,6 +73,17 @@ Install using yay (make sure it is hyprthemes, not hyprtheme):
 ```bash
 yay -S hyprthemes
 ```
+
+## Compatability
+Works on:
+Arch Linux
+
+Doesn't work on:
+Windows (stupid OS)
+Mac
+
+Untested:
+Every other one
 
 ## Showcase
 
