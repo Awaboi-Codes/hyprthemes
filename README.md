@@ -1,5 +1,22 @@
 # hyprthemes
-A Hyprland theme manager.
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![GitHub Repo stars](https://img.shields.io/github/stars/Awaboi-Codes/hyprthemes?style=social)](https://github.com/Awaboi-Codes/hyprthemes/stargazers)
+[![Arch User Repository](https://img.shields.io/aur/version/hyprthemes?label=AUR)](https://aur.archlinux.org/packages/hyprthemes/)
+
+A **Hyprland theme manager** to easily switch and manage Hyprland themes.
+
+---
+
+## Table of Contents
+- [Installation](#installation)
+  - [Manual Installation](#manual-installation)
+  - [AUR (Arch User Repository)](#aur-arch-user-repository)
+- [Usage](#usage)
+- [Showcase](#showcase)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
 
 ## Installation
 **Manual Installation**
