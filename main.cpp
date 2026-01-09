@@ -39,8 +39,12 @@ int main() {
         std::cerr << "HOME not set\n";
         return 1;
     }
+    std::cout << "Input theme name: ";
 
-    std::string path = std::string(home) + "/.config/hyprthemes/config.txt";
+    std::string themeName;
+    std::cin >> themeName;
+
+    std::string path = std::string(home) + "/.config/hyprthemes/themes/" + themeName + "/config.txt";
 
     std::string contents = getFileContents(path);
     std::cout << contents << '\n';
