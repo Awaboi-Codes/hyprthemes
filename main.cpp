@@ -44,7 +44,7 @@ int main() {
     std::string themeName;
     std::cin >> themeName;
 
-    std::string path = std::string(home) + "/.config/hyprthemes/themes/" + themeName + "/config.txt";
+    std::string path = std::string(home) + "/.config/hyprthemes/themes/" + themeName + "/config.json";
 
     std::string contents = getFileContents(path);
     std::cout << contents << '\n';
