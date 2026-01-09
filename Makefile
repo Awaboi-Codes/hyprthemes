@@ -6,8 +6,8 @@ CXX = g++
 CXXFLAGS = -Wall -std=c++17
 
 # Target executable
-TARGET = dependency-test
-SRC = dependency-test.cpp
+TARGET = hyprthemes
+SRC = main.cpp
 
 # Default target
 all: $(TARGET)
