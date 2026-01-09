@@ -8,6 +8,8 @@
 
 namespace fs = std::filesystem;
 
+using str = std::string;
+
 int main() {
     const char* home = std::getenv("HOME");
     if (!home) {
@@ -16,11 +18,11 @@ int main() {
     }
     std::cout << "Input theme name: ";
 
-    std::string themeName;
+    str themeName;
     std::cin >> themeName;
 
-    std::string path = std::string(home) + "/.config/hyprthemes/themes/" + themeName + "/config.json";
+    str path = str(home) + "/.config/hyprthemes/themes/" + themeName + "/config.json";
 
-    std::string contents = getFileContents(path);
+    str contents = getFileContents(path);
     std::cout << contents << '\n';
 }

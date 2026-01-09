@@ -7,7 +7,9 @@
 
 namespace fs = std::filesystem;
 
-std::string getFileContents(const std::string& filename) {
+using str = std::string;
+
+str getFileContents(const str& filename) {
     std::ifstream file(filename);
     if (!file) {
         std::cerr << "Error: Could not open the file " << filename << '\n';
@@ -19,7 +21,7 @@ std::string getFileContents(const std::string& filename) {
     return content_stream.str();
 }
 
-bool copyFile(const std::string& source, const std::string& destination) {
+bool copyFile(const str& source, const str& destination) {
     try {
         fs::copy_file(
             source,
