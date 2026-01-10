@@ -8,6 +8,7 @@
 
 int main() {
     const char* home = std::getenv("HOME");
+    str homestr = {home};
     if (!home) {
         std::cerr << "HOME not set\n";
         return 1;
@@ -17,8 +18,9 @@ int main() {
     str themeName;
     std::cin >> themeName;
 
-    str path = "~/.config/hyprthemes/themes/" + themeName + "/config.json";
+    str path = homestr + "/.config/hyprthemes/themes/" + themeName + "/config.json";
 
+    
     str contents = getFileContents(path);
     std::cout << contents << '\n';
 }
