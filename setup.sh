@@ -10,3 +10,6 @@ else
   cd $DIRECTORY
   mkdir "themes"
 fi
+
+make
+make run
