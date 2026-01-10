@@ -4,7 +4,7 @@
 #include <string>
 #include <sstream>
 #include <cstdlib>
-#include "filesys.hpp"
+#include "filesys.cpp"
 
 int main() {
     const char* home = std::getenv("HOME");
@@ -17,7 +17,7 @@ int main() {
     str themeName;
     std::cin >> themeName;
 
-    str path = str(home) + "/.config/hyprthemes/themes/" + themeName + "/config.json";
+    str path = "~/.config/hyprthemes/themes/" + themeName + "/config.json";
 
     str contents = getFileContents(path);
     std::cout << contents << '\n';
