@@ -11,5 +11,4 @@ else
   mkdir "themes"
 fi
 
-make
 make run
