@@ -6,10 +6,6 @@
 #include <cstdlib>
 #include "filesys.hpp"
 
-namespace fs = std::filesystem;
-
-using str = std::string;
-
 int main() {
     const char* home = std::getenv("HOME");
     if (!home) {

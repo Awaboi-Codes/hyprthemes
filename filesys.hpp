@@ -7,6 +7,10 @@
 namespace fs = std::filesystem;
 
 using str = std::string;
+using ostream = std::ostringstream;
+using fstream = std::ifstream;
+
+using str = std::string;
 
 str getFileContents(const str& filename);
 
