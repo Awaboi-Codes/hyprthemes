@@ -1,5 +1,5 @@
-#include "filesys.cpp"
-#include "imports.cpp"
+#include "src/filesys.cpp"
+#include "src/imports.cpp"
 
 int main() {
     const char* home = std::getenv("HOME");
