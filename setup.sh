@@ -11,4 +11,5 @@ else
   mkdir "themes"
 fi
 
-make run
+make 
+make install
