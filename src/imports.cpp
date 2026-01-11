@@ -6,6 +6,8 @@
 #include <cstdlib>
 #include <list>
 #include <vector>
+#include <map>
+#include <cstdio>
 
 namespace fs = std::filesystem;
 
