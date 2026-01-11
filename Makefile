@@ -1,26 +1,29 @@
-# Compiler
+# Compiler and flags
 CXX = g++
-
-# Compiler flags
 CXXFLAGS = -Wall -std=c++17
 
-# Target executable
+# Source files
+SRC = main.cpp src/filesys.cpp
 TARGET = hyprthemes
-SRC = main.cpp
-OUTPUT_DIR = /usr/bin
 
-# Default target
+# Default target: build
 all: $(TARGET)
 
-# Build target
+# Build the binary
 $(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
-	sudo chmod u+x $(TARGET)
-	sudo mv $(TARGET) $(OUTPUT_DIR)
-	export PATH="$(OUTPUT_DIR)/$(TARGET)"
+	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET) -lsimdjson
+	chmod +x $(TARGET)
 
-# Run target (optional)
+# Optional: install to /usr/bin
+install: $(TARGET)
+	sudo mv $(TARGET) /usr/bin/
+
+# Optional: run binary from current directory
 run: $(TARGET)
-	$(OUTPUT_DIR)/$(TARGET)
+	./$(TARGET)
 
-.PHONY: all clean run
+# Clean build artifacts
+clean:
+	rm -f $(TARGET)
+
+.PHONY: all install run clean

@@ -1,7 +1,7 @@
 #ifndef FILESYS_HPP
 #define FILESYS_HPP
 
-#include "imports.cpp"
+#include "imports.hpp"
 
 str getFileContents(const str& filename);
 

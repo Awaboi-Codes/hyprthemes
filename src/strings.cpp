@@ -1,4 +1,4 @@
-#include "imports.cpp"
+#include "imports.hpp"
 
 str replaceInstances(str input, str replacer, str tobereplaced) {
     size_t pos = 0;
