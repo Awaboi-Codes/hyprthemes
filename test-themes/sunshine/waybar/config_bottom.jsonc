@@ -1,0 +1,30 @@
+// -*- mode: jsonc -*-
+{
+    "name": "bottom",
+    "height": 40,
+    "spacing": 4,
+    "modules-left": [
+        "clock"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "custom/music",
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
+    "custom/music": {
+        "exec": "/home/awaboi/.local/bin/music.sh",
+        "interval": 2,
+        "return-type": "json",
+        "format": "⏸ {}",
+        "format-alt": "⏵ {}",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "max-length": 40,
+        "escape": true
+    }
+}
