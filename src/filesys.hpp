@@ -1,5 +1,5 @@
-#ifndef HYPRTHEMES_FILESYS_HPP
-#define HYPRTHEMES_FILESYS_HPP
+#ifndef FILESYS_HPP
+#define FILESYS_HPP
 
 #include "imports.cpp"
 

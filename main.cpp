@@ -1,7 +1,7 @@
 #include "src/filesys.cpp"
-#include "src/json.cpp"
 #include "src/imports.cpp"
 #include "src/strings.cpp"
+#include "src/simdjson.cpp"
 
 int main() {
     const char* home = std::getenv("HOME");
