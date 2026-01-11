@@ -1,0 +1,6 @@
+{
+    "folders": {
+        "hyprland": "~/.config/hypr",
+        "waybar": "~/.config/waybar"
+    }
+}
