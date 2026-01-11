@@ -27,6 +27,8 @@ int main(int argc, char* argv[]) {
     
     std::string command = argv[1];  // First argument after program name
     
+    
+    // "set" command
     if (command == "set") {
         std::cout << "Running 'set' command..." << std::endl;
         const char* home = std::getenv("HOME");
@@ -70,7 +72,10 @@ int main(int argc, char* argv[]) {
             std::cerr << "'folders' is not an object!" << std::endl;
             return 1;
         }
+
         
+
+        // folders parsing
         simdjson::dom::object obj = folders_element;
         std::map<std::string, std::string> folders;
         
@@ -86,6 +91,9 @@ int main(int argc, char* argv[]) {
             folders[std::string(key)] = std::string(value);
         }
         
+
+
+        // folders going from themes -> .config
         std::cout << "Folders found:\n";
         for (const auto &[name, path] : folders) {
             std::cout << name << " = " << path << "\n";
@@ -96,7 +104,11 @@ int main(int argc, char* argv[]) {
         }
         
         return 0;
-    } else if (command == "get") {
+    } 
+    
+
+    // "get" command
+    else if (command == "get") {
         std::cout << "Running 'get' command..." << std::endl;
         const char* home = std::getenv("HOME");
         if (!home) {
