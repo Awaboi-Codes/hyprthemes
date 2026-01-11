@@ -1,4 +1,4 @@
-#ifndef IMPORRS_HPP
+#ifndef IMPORTS_HPP
 #define IMPORTS_HPP
 
 #include <filesystem>
@@ -7,6 +7,7 @@
 #include <string>
 #include <sstream>
 #include <cstdlib>
+#include <list>
 
 namespace fs = std::filesystem;
 

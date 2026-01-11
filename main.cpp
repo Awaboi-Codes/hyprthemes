@@ -1,5 +1,7 @@
 #include "src/filesys.cpp"
+#include "src/json.cpp"
 #include "src/imports.cpp"
+#include "src/strings.cpp"
 
 int main() {
     const char* home = std::getenv("HOME");
@@ -8,7 +10,7 @@ int main() {
         std::cout << "HOME not set" << std::endl;
         return 1;
     }
-    std::cout << "Input theme name: " << std::endl;
+    std::cout << "Input theme name: ";
 
     str themeName;
     std::cin >> themeName;
@@ -21,5 +23,7 @@ int main() {
         std::cout << "Config file either empty or doesn't exist." << std::endl;
     }
 
+    configcontents = replaceInstances(configcontents, "", "\n");
+    configcontents = replaceInstances(configcontents, "", " ");
     std::cout << configcontents << std::endl;
 }

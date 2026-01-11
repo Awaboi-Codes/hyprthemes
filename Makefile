@@ -17,7 +17,7 @@ $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
 	sudo chmod u+x $(TARGET)
 	sudo mv $(TARGET) $(OUTPUT_DIR)
-	export PATH="$(PATH):$(OUTPUT_DIR)/$(TARGET)"
+	export PATH="$(OUTPUT_DIR)/$(TARGET)"
 
 # Run target (optional)
 run: $(TARGET)

@@ -1,5 +1,6 @@
-#include "filesys.cpp"
+#include "imports.hpp"
 
-int formatJSON(const str unformattedjson) {
-    return 1;
+std::list<str> formatJSON(const str unformattedjson) {
+    std::list<str> formattedjson = {};
+    return formattedjson;
 }
