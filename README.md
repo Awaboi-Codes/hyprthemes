@@ -30,27 +30,7 @@ To download those dependencies:
 
 *Arch/Manjaro Linux*
 ```bash
-sudo pacman -S bash git make gcc
-```
-
-*Debian-Based Linux (Ubuntu, Mint, etc.)*
-```bash
-sudo apt install bash git make gcc
-```
-
-*Fedora/Red Hat Linux*
-```bash
-sudo dnf install bash git make gcc
-```
-
-*openSUSE Linux*
-```bash
-sudo zypper install bash git make gcc
-```
-
-*Gentoo Linux*
-```bash
-sudo emerge bash git make gcc
+sudo pacman -S bash git make gcc simdjson
 ```
 
 **Manual Installation**
