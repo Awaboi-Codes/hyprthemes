@@ -164,7 +164,34 @@ int main(int argc, char* argv[]) {
         
         return 0;
         
+    } else if (command == "list") {
+        std::cout << "Themes:\n";
+        const char* home = std::getenv("HOME");
+        if (!home) {
+            std::cout << "HOME not set" << std::endl;
+            return 1;
+        }
+
+        fs::path dir = std::string(home) + "/.config/hyprthemes/themes/";
+        
+        for (const auto& entry : fs::directory_iterator(dir)) {
+        if (entry.is_directory()) {
+            std::cout << entry.path().filename().string() << '\n';
+        }}
+
+        return 0;
+    } else if (command == "help") {
+        std::cout << "Hyprthemes Help:\n";
+        std::cout << "Commands:\n";
+        std::cout << "  set <theme_name>   - Apply the specified theme\n";
+        std::cout << "  get <theme_name>   - Save current configuration to the specified theme\n";
+        std::cout << "  list               - List all available themes\n";
+        std::cout << "  help               - Show this help message\n";
+        
+        return 0;
+
     } else {
+
         std::cout << "Unknown command: " << command << std::endl;
         return 1;
     }
