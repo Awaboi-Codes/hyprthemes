@@ -1,0 +1,70 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 40, // Waybar height (to be removed for auto height)
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "clock"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "custom/music",
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
+    "custom/music": {
+        "exec": "/home/awaboi/.local/bin/music.sh",
+        "interval": 2,
+        "return-type": "json",
+        "format": "⏸ {}",
+        "format-alt": "⏵ {}",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "max-length": 40,
+        "escape": true
+    },
+    "clock": {
+        "tooltip-format": "{:%Y-%m-%d}"
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "all-outputs": true,
+        "persistent-workspaces": [],
+        "sort-by-number": true
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "Battery: {capacity}%",
+        "format-charging": "Charging: {capacity}%",
+        "format-alt": "{time} ~ {capacity}%"
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%)",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "Volume: {volume}%",
+        "format-bluetooth": "BT Volume: {volume}%",
+        "format-bluetooth-muted": "BT Muted",
+        "format-muted": "Muted",
+        "format-source-muted": "",
+        "on-click": "pavucontrol"
+    }
+}

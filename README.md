@@ -30,31 +30,8 @@ To download those dependencies:
 
 *Arch/Manjaro Linux*
 ```bash
-sudo pacman -S bash git make gcc
+sudo pacman -S bash git make gcc simdjson
 ```
-
-*Debian-Based Linux (Ubuntu, Mint, etc.)*
-```bash
-sudo apt install bash git make gcc
-```
-
-*Fedora/Red Hat Linux*
-```bash
-sudo dnf install bash git make gcc
-```
-
-*openSUSE Linux*
-```bash
-sudo zypper install bash git make gcc
-```
-
-*Gentoo Linux*
-```bash
-sudo emerge bash git make gcc
-```
-
-*Windows*
-Yeah right buddy like you are going to use Hyprland on Windows
 
 **Manual Installation**
 
@@ -62,7 +39,12 @@ Install using git:
 ```bash
 git clone https://github.com/Awaboi-Codes/hyprthemes.git
 cd hyprthemes
-make
+./setup.sh
+```
+
+If setup.sh can't be ran because of permissions, use:
+```bash
+sudo chmod +x setup.sh
 ```
 
 **AUR (Arch User Repository)**
@@ -78,12 +60,6 @@ yay -S hyprthemes
 Works on:
 ```text
 Arch Linux
-```
-
-Doesn't work on:
-```text
-Windows
-Mac
 ```
 
 ## Showcase
